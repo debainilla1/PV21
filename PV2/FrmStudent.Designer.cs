@@ -31,7 +31,9 @@
             this.BttPressMe = new System.Windows.Forms.Button();
             this.TxtName = new System.Windows.Forms.TextBox();
             this.LblName = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.CmbCarreer = new System.Windows.Forms.ComboBox();
+            this.BttClick = new System.Windows.Forms.Button();
+            this.LblNameOtro = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BttPressMe
@@ -59,25 +61,52 @@
             this.LblName.Size = new System.Drawing.Size(0, 13);
             this.LblName.TabIndex = 2;
             // 
-            // comboBox1
+            // CmbCarreer
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(15, 108);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(773, 21);
-            this.comboBox1.TabIndex = 3;
+            this.CmbCarreer.FormattingEnabled = true;
+            this.CmbCarreer.Items.AddRange(new object[] {
+            "Software",
+            "Seguridad Informática y Redes",
+            "Industrial y Rentabilidad de Negocios",
+            "Mecatrónica",
+            "Diseño Industrial"});
+            this.CmbCarreer.Location = new System.Drawing.Point(15, 108);
+            this.CmbCarreer.Name = "CmbCarreer";
+            this.CmbCarreer.Size = new System.Drawing.Size(773, 21);
+            this.CmbCarreer.TabIndex = 3;
+            // 
+            // BttClick
+            // 
+            this.BttClick.Location = new System.Drawing.Point(12, 164);
+            this.BttClick.Name = "BttClick";
+            this.BttClick.Size = new System.Drawing.Size(773, 23);
+            this.BttClick.TabIndex = 4;
+            this.BttClick.Text = "Apachurrame";
+            this.BttClick.UseVisualStyleBackColor = true;
+            this.BttClick.Click += new System.EventHandler(this.BttClick_Click);
+            // 
+            // LblNameOtro
+            // 
+            this.LblNameOtro.AutoSize = true;
+            this.LblNameOtro.Location = new System.Drawing.Point(12, 148);
+            this.LblNameOtro.Name = "LblNameOtro";
+            this.LblNameOtro.Size = new System.Drawing.Size(0, 13);
+            this.LblNameOtro.TabIndex = 5;
             // 
             // FrmStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.LblNameOtro);
+            this.Controls.Add(this.BttClick);
+            this.Controls.Add(this.CmbCarreer);
             this.Controls.Add(this.LblName);
             this.Controls.Add(this.TxtName);
             this.Controls.Add(this.BttPressMe);
             this.Name = "FrmStudent";
             this.Text = "FrmStudent";
+            this.Load += new System.EventHandler(this.FrmStudent_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -88,6 +117,8 @@
         private System.Windows.Forms.Button BttPressMe;
         private System.Windows.Forms.TextBox TxtName;
         private System.Windows.Forms.Label LblName;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox CmbCarreer;
+        private System.Windows.Forms.Button BttClick;
+        private System.Windows.Forms.Label LblNameOtro;
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -23,7 +24,7 @@ namespace PV2
             if (this.TxtName.Text != string.Empty)
             {
                 this.LblName.Text = this.TxtName.Text;
-            
+
             }
             else
             {
@@ -31,6 +32,25 @@ namespace PV2
 
 
             }
+        }
+
+        private void BttClick_Click(object sender, EventArgs e)
+        {
+            if (this.CmbCarreer.Text != string.Empty)
+
+            {
+                this.LblNameOtro.Text = this.CmbCarreer.Text;
+
+            }
+            else
+            {
+                this.LblName.Text = "La caja está vacía";
+            }
+        }
+
+        private void FrmStudent_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
