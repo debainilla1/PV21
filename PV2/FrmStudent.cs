@@ -25,7 +25,12 @@ namespace PV2
                 this.LblName.Text = this.TxtName.Text;
             
             }
-            
+            else
+            {
+                this.LblName.Text = "la caja está vacía";
+
+
+            }
         }
     }
 }
