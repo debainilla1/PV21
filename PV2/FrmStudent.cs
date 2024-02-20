@@ -44,7 +44,7 @@ namespace PV2
             }
             else
             {
-                this.LblName.Text = "La caja está vacía";
+                this.LblNameOtro.Text = "La caja está vacía";
             }
         }
 
