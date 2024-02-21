@@ -34,6 +34,7 @@
             this.CmbCarreer = new System.Windows.Forms.ComboBox();
             this.BttOtro = new System.Windows.Forms.Button();
             this.BttLongitud = new System.Windows.Forms.Button();
+            this.BttAbrirForma = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BttPressMe
@@ -96,12 +97,23 @@
             this.BttLongitud.UseVisualStyleBackColor = true;
             this.BttLongitud.Click += new System.EventHandler(this.BttLongitud_Click);
             // 
+            // BttAbrirForma
+            // 
+            this.BttAbrirForma.Location = new System.Drawing.Point(591, 215);
+            this.BttAbrirForma.Name = "BttAbrirForma";
+            this.BttAbrirForma.Size = new System.Drawing.Size(192, 23);
+            this.BttAbrirForma.TabIndex = 6;
+            this.BttAbrirForma.Text = "FrmDatos";
+            this.BttAbrirForma.UseVisualStyleBackColor = true;
+            this.BttAbrirForma.Click += new System.EventHandler(this.BttAbrirForma_Click);
+            // 
             // FrmStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BttAbrirForma);
             this.Controls.Add(this.BttLongitud);
             this.Controls.Add(this.BttOtro);
             this.Controls.Add(this.CmbCarreer);
@@ -124,5 +136,6 @@
         private System.Windows.Forms.ComboBox CmbCarreer;
         private System.Windows.Forms.Button BttOtro;
         private System.Windows.Forms.Button BttLongitud;
+        private System.Windows.Forms.Button BttAbrirForma;
     }
 }

@@ -57,6 +57,12 @@ namespace PV2
         {
             MessageBox.Show(this.CmbCarreer.Items.Count.ToString(),"Longitud de combo",MessageBoxButtons.YesNoCancel,MessageBoxIcon.Information); 
         }
+
+        private void BttAbrirForma_Click(object sender, EventArgs e)
+        {
+            FrmDatos x = new FrmDatos();
+            x.Show();
+        }
     }
 }
 
