@@ -28,7 +28,7 @@ namespace PV2
             }
             else
             {
-                this.LblName.Text = "la caja está vacía";
+                this.LblName.Text = "La caja está vacía";
 
 
             }
@@ -39,12 +39,12 @@ namespace PV2
             if (this.CmbCarreer.Text != string.Empty)
 
             {
-                this.LblNameOtro.Text = this.CmbCarreer.Text;
+                this.LblName.Text = this.CmbCarreer.Text;
 
             }
             else
             {
-                this.LblNameOtro.Text = "La caja está vacía";
+                this.LblName.Text = "La caja está vacía";
             }
         }
 
