@@ -51,6 +51,7 @@
             this.LstStudents.Name = "LstStudents";
             this.LstStudents.Size = new System.Drawing.Size(502, 186);
             this.LstStudents.TabIndex = 1;
+            this.LstStudents.SelectedIndexChanged += new System.EventHandler(this.LstStudents_SelectedIndexChanged);
             // 
             // TxtStudent
             // 
@@ -67,6 +68,7 @@
             this.BttAdd.TabIndex = 3;
             this.BttAdd.Text = "Add";
             this.BttAdd.UseVisualStyleBackColor = true;
+            this.BttAdd.Click += new System.EventHandler(this.BttAdd_Click);
             // 
             // BttDelete
             // 
@@ -76,6 +78,7 @@
             this.BttDelete.TabIndex = 4;
             this.BttDelete.Text = "Delete";
             this.BttDelete.UseVisualStyleBackColor = true;
+            this.BttDelete.Click += new System.EventHandler(this.BttDelete_Click);
             // 
             // FrmDatos
             // 
