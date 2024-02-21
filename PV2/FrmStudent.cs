@@ -52,6 +52,11 @@ namespace PV2
         {
             this.CmbCarreer.SelectedIndex = 0;
         }
+
+        private void BttLongitud_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(this.CmbCarreer.Items.Count.ToString(),"Longitud de combo",MessageBoxButtons.YesNoCancel,MessageBoxIcon.Information); 
+        }
     }
 }
 

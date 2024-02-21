@@ -33,6 +33,7 @@
             this.LblName = new System.Windows.Forms.Label();
             this.CmbCarreer = new System.Windows.Forms.ComboBox();
             this.BttOtro = new System.Windows.Forms.Button();
+            this.BttLongitud = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BttPressMe
@@ -85,12 +86,23 @@
             this.BttOtro.UseVisualStyleBackColor = true;
             this.BttOtro.Click += new System.EventHandler(this.BttClick_Click);
             // 
+            // BttLongitud
+            // 
+            this.BttLongitud.Location = new System.Drawing.Point(10, 215);
+            this.BttLongitud.Name = "BttLongitud";
+            this.BttLongitud.Size = new System.Drawing.Size(216, 23);
+            this.BttLongitud.TabIndex = 5;
+            this.BttLongitud.Text = "Longitud de cmb";
+            this.BttLongitud.UseVisualStyleBackColor = true;
+            this.BttLongitud.Click += new System.EventHandler(this.BttLongitud_Click);
+            // 
             // FrmStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BttLongitud);
             this.Controls.Add(this.BttOtro);
             this.Controls.Add(this.CmbCarreer);
             this.Controls.Add(this.LblName);
@@ -111,5 +123,6 @@
         private System.Windows.Forms.Label LblName;
         private System.Windows.Forms.ComboBox CmbCarreer;
         private System.Windows.Forms.Button BttOtro;
+        private System.Windows.Forms.Button BttLongitud;
     }
 }
