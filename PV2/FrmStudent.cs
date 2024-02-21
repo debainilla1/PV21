@@ -50,7 +50,7 @@ namespace PV2
 
         private void FrmStudent_Load(object sender, EventArgs e)
         {
-
+            this.CmbCarreer.SelectedIndex = 0;
         }
     }
 }

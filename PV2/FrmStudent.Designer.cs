@@ -37,7 +37,7 @@
             // 
             // BttPressMe
             // 
-            this.BttPressMe.Location = new System.Drawing.Point(10, 133);
+            this.BttPressMe.Location = new System.Drawing.Point(10, 157);
             this.BttPressMe.Name = "BttPressMe";
             this.BttPressMe.Size = new System.Drawing.Size(773, 23);
             this.BttPressMe.TabIndex = 0;
@@ -47,7 +47,7 @@
             // 
             // TxtName
             // 
-            this.TxtName.Location = new System.Drawing.Point(15, 4);
+            this.TxtName.Location = new System.Drawing.Point(15, 25);
             this.TxtName.Name = "TxtName";
             this.TxtName.Size = new System.Drawing.Size(773, 20);
             this.TxtName.TabIndex = 1;
@@ -55,28 +55,29 @@
             // LblName
             // 
             this.LblName.AutoSize = true;
-            this.LblName.Location = new System.Drawing.Point(12, 117);
+            this.LblName.Location = new System.Drawing.Point(12, 127);
             this.LblName.Name = "LblName";
             this.LblName.Size = new System.Drawing.Size(0, 13);
             this.LblName.TabIndex = 2;
             // 
             // CmbCarreer
             // 
+            this.CmbCarreer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CmbCarreer.FormattingEnabled = true;
             this.CmbCarreer.Items.AddRange(new object[] {
-            "Software",
-            "Seguridad Informática y Redes",
+            "Diseño Industrial",
             "Industrial y Rentabilidad de Negocios",
             "Mecatrónica",
-            "Diseño Industrial"});
-            this.CmbCarreer.Location = new System.Drawing.Point(15, 30);
+            "Seguridad Informática y Redes",
+            "Software"});
+            this.CmbCarreer.Location = new System.Drawing.Point(15, 63);
             this.CmbCarreer.Name = "CmbCarreer";
             this.CmbCarreer.Size = new System.Drawing.Size(773, 21);
             this.CmbCarreer.TabIndex = 3;
             // 
             // BttOtro
             // 
-            this.BttOtro.Location = new System.Drawing.Point(10, 162);
+            this.BttOtro.Location = new System.Drawing.Point(10, 186);
             this.BttOtro.Name = "BttOtro";
             this.BttOtro.Size = new System.Drawing.Size(773, 23);
             this.BttOtro.TabIndex = 4;
