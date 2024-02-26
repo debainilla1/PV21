@@ -33,6 +33,9 @@
             this.TxtStudent = new System.Windows.Forms.TextBox();
             this.BttAdd = new System.Windows.Forms.Button();
             this.BttDelete = new System.Windows.Forms.Button();
+            this.TxtAge = new System.Windows.Forms.TextBox();
+            this.LblAge = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // LblStudent
@@ -80,11 +83,41 @@
             this.BttDelete.UseVisualStyleBackColor = true;
             this.BttDelete.Click += new System.EventHandler(this.BttDelete_Click);
             // 
+            // TxtAge
+            // 
+            this.TxtAge.Location = new System.Drawing.Point(628, 79);
+            this.TxtAge.Name = "TxtAge";
+            this.TxtAge.Size = new System.Drawing.Size(100, 20);
+            this.TxtAge.TabIndex = 5;
+            this.TxtAge.TextChanged += new System.EventHandler(this.TxtAge_TextChanged);
+            this.TxtAge.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtAge_KeyPress);
+            // 
+            // LblAge
+            // 
+            this.LblAge.AutoSize = true;
+            this.LblAge.Location = new System.Drawing.Point(555, 85);
+            this.LblAge.Name = "LblAge";
+            this.LblAge.Size = new System.Drawing.Size(26, 13);
+            this.LblAge.TabIndex = 6;
+            this.LblAge.Text = "Age";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(542, 144);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 7;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
             // FrmDatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(868, 450);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.LblAge);
+            this.Controls.Add(this.TxtAge);
             this.Controls.Add(this.BttDelete);
             this.Controls.Add(this.BttAdd);
             this.Controls.Add(this.TxtStudent);
@@ -92,6 +125,7 @@
             this.Controls.Add(this.LblStudent);
             this.Name = "FrmDatos";
             this.Text = "FrmDatos";
+            this.Load += new System.EventHandler(this.FrmDatos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,5 +138,8 @@
         private System.Windows.Forms.TextBox TxtStudent;
         private System.Windows.Forms.Button BttAdd;
         private System.Windows.Forms.Button BttDelete;
+        private System.Windows.Forms.TextBox TxtAge;
+        private System.Windows.Forms.Label LblAge;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
