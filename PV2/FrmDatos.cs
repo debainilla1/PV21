@@ -61,13 +61,44 @@ namespace PV2
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-
+            this.MntDate.SetDate
+                (this.dateTimePicker1.Value);
+           
         }
 
         private void FrmDatos_Load(object sender, EventArgs e)
         {
             DateTime dateTime = DateTime.Now;
             MessageBox.Show(dateTime.ToString());
+        }
+
+        private void BttShow_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show
+                ("Año: " + 
+                this.dateTimePicker1.Value.Year.ToString() 
+                + "\nMes: " +
+                this.dateTimePicker1.Value.Month.ToString() 
+                + "\nDía: " +
+                this.dateTimePicker1.Value.Day.ToString() 
+                + "\nDía de la semana: " +
+                this.dateTimePicker1.Value.DayOfWeek.ToString() 
+                + "\nDía del año: " +
+                this.dateTimePicker1.Value.DayOfYear.ToString());
+ 
+                ;
+        }
+
+        private void BttCalAge_Click(object sender, EventArgs e)
+        {
+            TxtAge.Text =
+           
+                ((" " + DateTime.Now.ToString()) +
+                this.dateTimePicker1.Value.Year.ToString());
+           
+
+
+
         }
     }
     }

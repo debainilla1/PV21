@@ -36,6 +36,9 @@
             this.TxtAge = new System.Windows.Forms.TextBox();
             this.LblAge = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.BttShow = new System.Windows.Forms.Button();
+            this.MntDate = new System.Windows.Forms.MonthCalendar();
+            this.BttCalAge = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LblStudent
@@ -104,17 +107,48 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(542, 144);
+            this.dateTimePicker1.Location = new System.Drawing.Point(542, 177);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 7;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
+            // BttShow
+            // 
+            this.BttShow.Location = new System.Drawing.Point(748, 174);
+            this.BttShow.Name = "BttShow";
+            this.BttShow.Size = new System.Drawing.Size(75, 23);
+            this.BttShow.TabIndex = 8;
+            this.BttShow.Text = "Show";
+            this.BttShow.UseVisualStyleBackColor = true;
+            this.BttShow.Click += new System.EventHandler(this.BttShow_Click);
+            // 
+            // MntDate
+            // 
+            this.MntDate.Location = new System.Drawing.Point(605, 209);
+            this.MntDate.Name = "MntDate";
+            this.MntDate.SelectionRange = new System.Windows.Forms.SelectionRange(new System.DateTime(2024, 2, 20, 0, 0, 0, 0), new System.DateTime(2024, 2, 26, 0, 0, 0, 0));
+            this.MntDate.TabIndex = 9;
+            this.MntDate.TodayDate = new System.DateTime(2024, 2, 26, 0, 0, 0, 0);
+            // 
+            // BttCalAge
+            // 
+            this.BttCalAge.Location = new System.Drawing.Point(829, 174);
+            this.BttCalAge.Name = "BttCalAge";
+            this.BttCalAge.Size = new System.Drawing.Size(113, 23);
+            this.BttCalAge.TabIndex = 10;
+            this.BttCalAge.Text = "Calcula Edad";
+            this.BttCalAge.UseVisualStyleBackColor = true;
+            this.BttCalAge.Click += new System.EventHandler(this.BttCalAge_Click);
+            // 
             // FrmDatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(868, 450);
+            this.ClientSize = new System.Drawing.Size(968, 450);
+            this.Controls.Add(this.BttCalAge);
+            this.Controls.Add(this.MntDate);
+            this.Controls.Add(this.BttShow);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.LblAge);
             this.Controls.Add(this.TxtAge);
@@ -141,5 +175,8 @@
         private System.Windows.Forms.TextBox TxtAge;
         private System.Windows.Forms.Label LblAge;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button BttShow;
+        private System.Windows.Forms.MonthCalendar MntDate;
+        private System.Windows.Forms.Button BttCalAge;
     }
 }
