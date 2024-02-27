@@ -13,6 +13,8 @@ namespace PV2
 {
     public partial class FrmDatos : Form
     {
+       
+
         public FrmDatos()
         {
             InitializeComponent();
@@ -91,11 +93,10 @@ namespace PV2
 
         private void BttCalAge_Click(object sender, EventArgs e)
         {
-            TxtAge.Text =
+            int age = DateTime.Now.Year - dateTimePicker1.Value.Year;
+            TxtAge.Text = age.ToString();
            
-                ((" " + DateTime.Now.ToString()) +
-                this.dateTimePicker1.Value.Year.ToString());
-           
+            
 
 
 
