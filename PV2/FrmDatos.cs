@@ -101,6 +101,11 @@ namespace PV2
 
 
         }
+
+        private void MntDate_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
+        }
     }
     }
     

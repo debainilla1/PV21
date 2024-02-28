@@ -130,6 +130,7 @@
             this.MntDate.SelectionRange = new System.Windows.Forms.SelectionRange(new System.DateTime(2024, 2, 20, 0, 0, 0, 0), new System.DateTime(2024, 2, 26, 0, 0, 0, 0));
             this.MntDate.TabIndex = 9;
             this.MntDate.TodayDate = new System.DateTime(2024, 2, 26, 0, 0, 0, 0);
+            this.MntDate.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.MntDate_DateChanged);
             // 
             // BttCalAge
             // 
